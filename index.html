@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap"
+      rel="stylesheet"
+    />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="left-section">
+      <img
+        class="background"
+        src="images/background.jpg"
+        alt="background image"
+      />
+      <div class="logo-section"></div>
+      <img class="logo" src="images/odin-logo.png" alt="odin logo" />
+      <h3 class="logo-text">ODIN</h3>
+
+      <h6 class="credit">
+        Photo by
+        <a
+          href="https://unsplash.com/photos/25xggax4bSA"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Halie West</a
+        >
+        on
+        <a
+          href="https://unsplash.com/"
+          target="_blank"
+          rel="noopener noreferrer"
+          >Unsplash</a
+        >
+      </h6>
+    </div>
+
+    <div class="right-section">
+      <div class="text-box">
+        <div class="first-text">
+          <p>
+            This is not a real online service! You know you need something like
+            this in your life to help you realize your deepest dreams. Sign up
+            <i>now</i> to get started.
+          </p>
+        </div>
+        <div class="second-text">
+          <p>You <i>know</i> you want to.</p>
+        </div>
+      </div>
+
+      <div class="sign-up-form">
+        <h2>Let's do this!</h2>
+        <form action="" method="post">
+          <div style="float:left; margin-right:3rem; margin-left: 3rem; margin-bottom: 1rem;">
+            <label for="first_name">FIRST NAME</label>
+            <input type="text" id="first_name" required/>
+          </div>
+
+          <div style="float: left">
+            <label for="last_name">LAST NAME</label>
+            <input type="text" id="last_name" required/>
+          </div>
+
+          <br style="clear: both" />
+
+          <div style="float:left; margin-right:3rem; margin-left: 3rem; margin-bottom: 1rem;">
+            <label for="user_email">EMAIL</label>
+            <input
+              type="email"
+              name="email"
+              id="user_email"
+              placeholder="you@example.com"
+              required
+            />
+          </div>
+
+          <div style="float: left">
+            <label for="phone_number">PHONE NUMBER</label>
+            <input type="tel" name="number" id="phone_number" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" required/>
+            <small>Format: 123-456-7890</small>
+          </div>
+          <br style="clear: both" />
+
+          <div style="float:left; margin-right:3rem; margin-left: 3rem; margin-bottom: 1rem;">
+            <label for="user_password">PASSWORD</label>
+            <input type="password" name="password" id="user_password" class="error" required />
+            <!-- doesnt make sense to display error message when the user has not entered any password yet -->
+            <!-- <div class="password_error_message">* Passwords do not match</div> -->
+          </div>
+
+          <div style="float: left">
+            <label for="confirm_password">CONFIRM PASSWORD</label>
+            <input
+              type="password"
+              name="confirm_password"
+              id="confirm_password"
+              required
+            />
+          </div>
+
+          <br style="clear: both" />
+
+          <button class="create_account" type="submit">Create Account</button>
+
+          <div class="have_an_account">
+            Already have an account? <span style="color:#596D48; font-weight: bold">Log in</span>
+          </div>
+          
+        </form>
+      </div>
+    </div>
+  </body>
+</html>

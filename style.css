@@ -1,0 +1,146 @@
+@font-face {
+  font-family: Norse-Bold;
+  src: url("fonts/Norse-Bold.otf") format("opentype");
+}
+
+html,
+body {
+  margin: 0;
+  overflow: hidden;
+  /* this fixes the extra white space at the bottom of page */
+  display: flex;
+  /* default flex direction is row */
+}
+
+.background {
+  width: 35vw;
+  height: 100vh;
+}
+
+.left-section {
+  position: relative;
+}
+
+.logo-section {
+  position: relative;
+  width: 35vw;
+  height: 15vh;
+  bottom: 50rem;
+  background-color: black;
+  opacity: 0.5;
+}
+
+.logo {
+  position: relative;
+  width: 6rem;
+  height: 7rem;
+  bottom: 58rem;
+  left: 13rem;
+}
+
+.logo-text {
+  position: relative;
+  font-family: Norse-Bold;
+  color: white;
+  font-size: 5rem;
+  bottom: 68.5rem;
+  left: 19rem;
+}
+
+.credit {
+  position: relative;
+  bottom: 33rem;
+  left: 15rem;
+  color: white;
+  opacity: 0.8;
+}
+
+.credit > a {
+  color: white;
+}
+
+.right-section {
+  /* background-color: blueviolet; */
+  /* in case you want to see how much space the right section takes up*/
+  width: 65vw;
+}
+
+.text-box {
+  background-color: #f9fafb;
+  /* width: 65vw; */
+  /* setting width is optional, since we alredy set the width at parent element right-section */
+  height: 33vh;
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  /* gap separates the two text divs, it's vertical because flex direction is column*/
+  padding-left: 3rem;
+}
+
+.first-text {
+  padding-top: 8rem;
+}
+
+.first-text,
+.second-text {
+  display: flex;
+  font-size: 1.3rem;
+  /* font-weight: bold; */
+  flex-wrap: wrap;
+  width: 37rem;
+  font-family: "Roboto", sans-serif;
+}
+
+.sign-up-form {
+  height: 30vh;
+}
+
+.sign-up-form > h2 {
+  font-family: "Roboto", sans-serif;
+  padding-left: 3rem;
+}
+
+input {
+    border: solid;
+}
+
+label {
+    margin-top: 1rem;
+}
+
+input,
+input:focus,
+label {
+  display: block;
+  width: 23rem;
+  font-family: "Roboto", sans-serif;
+  border-radius: 6px;
+  height: 2rem;
+  border-color: #E5E7EB;
+}
+
+
+/* input:invalid {
+    border-color: red;
+} */
+
+.create_account {
+    color: white;
+    background-color: #596D48;
+    border-radius: 6px;
+    font-family: "Roboto", sans-serif;
+    width: 11rem;
+    height: 2.5rem;
+    margin-top: 2rem;
+    margin-left: 3rem;
+}
+
+.have_an_account {
+    margin-left: 3rem;
+    margin-top: 3rem;
+}
+
+/* @media only screen and (max-width: 600px) {
+
+} */
+
